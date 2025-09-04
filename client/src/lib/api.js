@@ -1,5 +1,5 @@
-const BASE = (process.env.REACT_APP_API_BASE || "/api").replace(/\/$/, "");
-export const API_URL = BASE;
+const BASE = (process.env.REACT_APP_API_BASE || "").replace(/\/$/, ""); // без хвостового /
+export const API_URL = BASE ? `${BASE}/api` : "/api"; // ← тут магия
 
 const TOKEN_KEY = "pd.token";
 const USER_KEY = "pd.user";
