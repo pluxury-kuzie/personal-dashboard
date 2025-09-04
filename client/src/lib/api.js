@@ -1,5 +1,6 @@
-// минимальный клиент для API с поддержкой токена
-export const API_URL = "/api";
+const BASE = (process.env.REACT_APP_API_BASE || "/api").replace(/\/$/, "");
+export const API_URL = BASE;
+
 const TOKEN_KEY = "pd.token";
 const USER_KEY = "pd.user";
 
