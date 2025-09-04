@@ -1,0 +1,16 @@
+{
+  "css.lint.unknownAtRules": "ignore",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.files.exclude": [
+    "**/build/**",
+    "**/node_modules/**",
+    "src/tw.css"
+  ],
+  "files.watcherExclude": {
+    "**/build/**": true
+  }
+}
+
+

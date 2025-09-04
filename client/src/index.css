@@ -1,0 +1,18 @@
+@source "./**/*.{js,jsx,ts,tsx,html}";
+@import "tailwindcss";
+
+/* Исправляем проблему с белыми границами от Tailwind v4 */
+* {
+  border-color: transparent !important;
+}
+
+/* Убираем белые границы для элементов с border классами */
+.border-gray-700,
+.border-gray-600,
+.border-gray-500,
+.border-blue-500,
+.border-red-500,
+.border-green-500,
+.border-yellow-500 {
+  border-color: inherit !important;
+}
