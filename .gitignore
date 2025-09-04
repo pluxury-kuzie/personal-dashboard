@@ -1,0 +1,44 @@
+# ── OS / editors ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ── logs ─────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── node (монорепо) ──────────────────────────────────────────
+node_modules/
+**/node_modules/
+
+# Yarn PnP (если вдруг)
+**/.pnp
+**/.pnp.js
+
+# ── env (секреты) ────────────────────────────────────────────
+.env
+*.env
+**/.env
+**/*.env
+.env.*.local
+**/.env.*.local
+server/.env
+client/.env
+
+# ── тесты ────────────────────────────────────────────────────
+coverage/
+**/coverage/
+
+# ── билды / дист ─────────────────────────────────────────────
+client/build/
+dist/
+server/dist/
+
+# ── хостинги ─────────────────────────────────────────────────
+.vercel/
+.netlify/
