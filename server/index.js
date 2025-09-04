@@ -139,13 +139,11 @@ const URI = process.env.MONGODB_URI || "mongodb+srv://liskuza_db_user:JcXCLpgOEX
 
 (async () => {
   try {
-    await connectDB(URI);
-    app.listen(PORT, () => {
-      console.log(`API listening on http://localhost:${PORT}`);
-    });
+    await connectDB();
+    app.listen(PORT, () => console.log(`API listening on http://localhost:${PORT}`));
   } catch (e) {
     console.error("❌ Failed to start server:", e.stack || e.message);
-    process.exit(1); // nodemon перезапустит, но теперь будет видно конкретную причину
+    process.exit(1);
   }
 })();
 
